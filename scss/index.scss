@@ -1,0 +1,36 @@
+@import "__null";
+
+body {
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  background-color: #454545;
+
+  textarea {
+    font-size       : 55px;
+    border          : 1px solid rgba(0, 0, 0, 0);
+    text-align      : center;
+    transition      : 0.3s;
+    color           : #ffffff;
+    background-color: inherit;
+
+    -ms-overflow-style: none;
+    scrollbar-width   : none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &:active,
+    &:hover {
+      border: 1px solid black;
+
+      -ms-overflow-style: none;
+      scrollbar-width   : none;
+
+      &::-webkit-scrollbar {
+        display: block;
+      }
+    }
+  }
+}
